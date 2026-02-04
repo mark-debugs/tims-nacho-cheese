@@ -46,10 +46,11 @@ Plans:
   4. Hovering buttons and cards triggers bouncy, cheese-themed micro-interactions
   5. Page transitions between routes are smooth and animated
   6. Where to buy section tells users how to order
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD
+- [ ] 02-01-PLAN.md — Animation infrastructure, flavor data, Svelte actions, page transitions
+- [ ] 02-02-PLAN.md — Product showcase page with animated flavor cards, MEGA SPICE effects, and where-to-buy section
 
 ### Phase 3: Brand & Content
 **Goal**: Tim's personality shines through with hero section, brand story, and blog mixing recipes with west coast adventures
@@ -91,6 +92,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 2/2 | Complete | 2026-02-04 |
-| 2. Product Showcase | 0/0 | Not started | - |
+| 2. Product Showcase | 0/2 | Planned | - |
 | 3. Brand & Content | 0/0 | Not started | - |
 | 4. Merch & Polish | 0/0 | Not started | - |
