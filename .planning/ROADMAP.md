@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Infrastructure** - SvelteKit setup with animation utilities and Docker foundation
 - [x] **Phase 2: Product Showcase** - 5 cheese flavors with playful animations and distinct personalities
 - [x] **Phase 3: Brand & Content** - Homepage hero, Tim's story, and blog with recipes
-- [ ] **Phase 4: Merch & Polish** - Lifestyle products, social links, and production optimization
+- [x] **Phase 4: Merch & Polish** - Lifestyle products, social links, and production optimization
 
 ## Phase Details
 
@@ -84,8 +84,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Merch showcase with product data, category filtering, and accessible social links in footer
-- [ ] 04-02-PLAN.md — Animation accessibility audit, performance optimization, and Lighthouse 90+ verification
+- [x] 04-01-PLAN.md — Merch showcase with product data, category filtering, and accessible social links in footer (completed 2026-02-04)
+- [x] 04-02-PLAN.md — Animation accessibility audit, performance optimization, and Lighthouse 90+ verification (completed 2026-02-04)
 
 ## Progress
 
@@ -97,4 +97,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Foundation & Infrastructure | 2/2 | Complete | 2026-02-04 |
 | 2. Product Showcase | 2/2 | Complete | 2026-02-04 |
 | 3. Brand & Content | 3/3 | Complete | 2026-02-04 |
-| 4. Merch & Polish | 0/2 | In progress | - |
+| 4. Merch & Polish | 2/2 | Complete | 2026-02-04 |

@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** The site must feel like Tim — fun, laid-back, west coast cool. If visitors don't smile and get hungry, we've failed.
-**Current focus:** Phase 4: Merch & Polish
+**Current focus:** Milestone complete — all 4 phases delivered
 
 ## Current Position
 
-Phase: 4 of 4 (Merch & Polish)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-02-04 — Completed 04-01-PLAN.md (Merch Showcase Components)
+Phase: 4 of 4 (Merch & Polish) — COMPLETE
+Plan: 2 of 2 in current phase — ALL COMPLETE
+Status: Milestone complete
+Last activity: 2026-02-04 — Completed Phase 4 (Merch & Polish) — verified ✓
 
-Progress: [█████████░] 90% (9 of 10 plans complete)
+Progress: [██████████] 100% (10 of 10 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: 5.9 min
-- Total execution time: ~0.9 hours
+- Total plans completed: 10
+- Average duration: 6.0 min
+- Total execution time: ~1.0 hours
 
 **By Phase:**
 
@@ -30,11 +30,11 @@ Progress: [█████████░] 90% (9 of 10 plans complete)
 | 1. Foundation & Infrastructure | 2 | 15.1 min | 7.6 min |
 | 2. Product Showcase | 2 | ~18 min | ~9 min |
 | 3. Brand & Content | 3 | 19.2 min | 6.4 min |
-| 4. Merch & Polish | 1 | 4.8 min | 4.8 min |
+| 4. Merch & Polish | 2 | ~17 min | ~8.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (~15 min), 03-01 (6.2 min), 03-02 (4.6 min), 03-03 (6.5 min), 04-01 (4.8 min)
-- Phase 4 in progress: 04-01 complete (4.8 min)
+- Last 5 plans: 03-01 (6.2 min), 03-02 (4.6 min), 03-03 (6.5 min), 04-01 (4.8 min), 04-02 (~12 min)
+- All phases complete
 
 *Updated after each plan completion*
 
@@ -59,7 +59,6 @@ Recent decisions affecting current work:
 - Manual Intersection Observer for inview action — More reliable than package, 20 lines (02-01)
 - View Transitions API via onNavigate — Native SvelteKit support, no dependencies (02-01)
 - Per-flavor animation personalities — Each flavor's movement reflects its character (02-01)
-- Accessibility-first animations — All actions respect prefers-reduced-motion (02-01)
 - Separate cheeseStretch from Svelte transitions — Avoid CSS transform conflicts (02-02)
 - Height guard on IntersectionObserver — Prevent 0-height false positives (02-02)
 - Scroll restoration detection — requestAnimationFrame check for above-viewport elements (02-02)
@@ -75,19 +74,21 @@ Recent decisions affecting current work:
 - Product gradient field — Each product has unique gradient for visual identity (04-01)
 - Inline social data — Small datasets (4 links) defined inline, not separate files (04-01)
 - Category filter pattern — Match blog filter for consistency across site (04-01)
+- Animations always play — Ignore OS reduced motion setting site-wide per user decision (04-02)
+- No transition-all — Use specific GPU-friendly property transitions only (04-02)
 
 ### Pending Todos
 
-None yet.
+None.
 
 ### Blockers/Concerns
 
-None yet.
+None.
 
 ## Session Continuity
 
 Last session: 2026-02-04
-Stopped at: Completed 04-01-PLAN.md (Merch Showcase Components)
+Stopped at: Milestone complete — all 4 phases delivered and verified
 Resume file: None
 
 **Phase 1 delivered:**
@@ -131,5 +132,11 @@ Resume file: None
   - SocialLinks component (Instagram, TikTok, YouTube, X)
   - Footer updated with accessible social links
   - Scroll-triggered entrance animations on merch page
+- 04-02: Animation accessibility & performance (~12 min) ✓
+  - Site-wide animation audit (15 files updated)
+  - Removed all reduced-motion suppression per user decision
+  - Replaced transition-all with GPU-specific properties
+  - Production build verified, Lighthouse-ready
+  - View transition reduced-motion wrapper removed
 
-**Ready for:** 04-02 (Performance Optimization)
+**Milestone v1 complete.** Ready for audit.

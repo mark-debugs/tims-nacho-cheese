@@ -39,11 +39,11 @@
 
 ### Merch
 
-- [ ] **MERCH-01**: Merch showcase pages display apparel, skate decks, stickers, pins, and accessories
+- [x] **MERCH-01**: Merch showcase pages display apparel, skate decks, stickers, pins, and accessories
 
 ### Social
 
-- [ ] **SOCL-01**: Social media links connect to Instagram, TikTok, and other active channels
+- [x] **SOCL-01**: Social media links connect to Instagram, TikTok, and other active channels
 
 ### Infrastructure
 
@@ -103,8 +103,8 @@
 | BLOG-02 | Phase 3 | Complete |
 | BLOG-03 | Phase 3 | Complete |
 | BLOG-04 | Phase 3 | Complete |
-| MERCH-01 | Phase 4 | Pending |
-| SOCL-01 | Phase 4 | Pending |
+| MERCH-01 | Phase 4 | Complete |
+| SOCL-01 | Phase 4 | Complete |
 | INFRA-01 | Phase 1 | Complete |
 | INFRA-02 | Phase 1 | Complete |
 
@@ -115,4 +115,4 @@
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-04 after Phase 3 completion*
+*Last updated: 2026-02-04 after Phase 4 completion*
