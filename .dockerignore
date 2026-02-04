@@ -1,0 +1,14 @@
+node_modules
+.git
+.svelte-kit
+build
+.DS_Store
+*.log
+coverage
+.env
+.env.*
+!.env.example
+.planning
+README.md
+index.ts
+nul
