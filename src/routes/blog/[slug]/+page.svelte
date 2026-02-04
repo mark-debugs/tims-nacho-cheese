@@ -182,7 +182,7 @@
 					{#each data.metadata.products as productId}
 						<a
 							href="/products#{productId}"
-							class="block bg-white/20 hover:bg-white/30 rounded-lg px-4 py-3 transition-colors font-medium"
+							class="block bg-white/20 hover:bg-white/30 rounded-lg px-4 py-3 transition-colors motion-reduce:transition-none font-medium"
 						>
 							{getProductName(productId)}
 						</a>

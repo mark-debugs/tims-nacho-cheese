@@ -398,14 +398,14 @@
 			<a
 				href="mailto:tim@timsnachocheese.com"
 				use:cheeseStretch
-				class="inline-block px-8 py-3 bg-nacho-500 text-white font-bold rounded-full hover:bg-nacho-600 transition-colors"
+				class="inline-block px-8 py-3 bg-nacho-500 text-white font-bold rounded-full hover:bg-nacho-600 transition-colors motion-reduce:transition-none"
 			>
 				Email Tim
 			</a>
 			<a
 				href="/blog"
 				use:cheeseStretch
-				class="inline-block px-8 py-3 bg-white text-nacho-600 font-bold rounded-full hover:bg-gray-100 transition-colors border-2 border-nacho-300"
+				class="inline-block px-8 py-3 bg-white text-nacho-600 font-bold rounded-full hover:bg-gray-100 transition-colors motion-reduce:transition-none border-2 border-nacho-300"
 			>
 				Read the Blog
 			</a>

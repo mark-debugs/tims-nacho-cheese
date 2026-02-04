@@ -32,7 +32,7 @@
 </script>
 
 <button
-	class="w-full bg-nacho-500 hover:bg-nacho-600 text-white font-bold py-3 px-6 rounded-full transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+	class="w-full bg-nacho-500 hover:bg-nacho-600 text-white font-bold py-3 px-6 rounded-full transition-colors motion-reduce:transition-none flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
 	onclick={handleDownload}
 	disabled={loading}
 	use:cheeseStretch

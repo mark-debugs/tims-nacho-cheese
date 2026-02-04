@@ -11,7 +11,7 @@
 
 <div
 	use:cheeseStretch
-	class="bg-white rounded-2xl overflow-hidden shadow-lg motion-safe:hover:scale-[1.02] motion-safe:hover:-translate-y-1 motion-safe:transition-all motion-reduce:transition-none cursor-pointer"
+	class="bg-white rounded-2xl overflow-hidden shadow-lg motion-safe:hover:scale-[1.02] motion-safe:hover:-translate-y-1 motion-safe:transition-[transform,box-shadow] motion-reduce:transition-none cursor-pointer"
 >
 	<div class="bg-gradient-to-br {product.gradient} h-64 flex items-center justify-center">
 		<div class="text-9xl">{product.emoji}</div>

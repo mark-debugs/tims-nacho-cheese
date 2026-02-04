@@ -166,8 +166,8 @@
 		</div>
 	</div>
 	<!-- Decorative background elements -->
-	<div class="absolute top-10 left-10 text-6xl opacity-20 animate-bounce">🧀</div>
-	<div class="absolute bottom-10 right-10 text-6xl opacity-20 animate-bounce delay-100">🧀</div>
+	<div class="absolute top-10 left-10 text-6xl opacity-20 motion-safe:animate-bounce">🧀</div>
+	<div class="absolute bottom-10 right-10 text-6xl opacity-20 motion-safe:animate-bounce delay-100">🧀</div>
 </div>
 
 <!-- Feature Cards -->
@@ -180,7 +180,7 @@
 			use:inview
 			oninview_enter={onCard1InView}
 			use:cheeseStretch
-			class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow"
+			class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow motion-reduce:transition-none"
 			style="transform: translateY({$card1Y}px); opacity: {$card1Opacity};"
 		>
 			<div class="text-5xl mb-4">🌊</div>
@@ -195,7 +195,7 @@
 			use:inview
 			oninview_enter={onCard2InView}
 			use:cheeseStretch
-			class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow"
+			class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow motion-reduce:transition-none"
 			style="transform: translateY({$card2Y}px); opacity: {$card2Opacity};"
 		>
 			<div class="text-5xl mb-4">🔥</div>
@@ -209,7 +209,7 @@
 			use:inview
 			oninview_enter={onCard3InView}
 			use:cheeseStretch
-			class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow"
+			class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow motion-reduce:transition-none"
 			style="transform: translateY({$card3Y}px); opacity: {$card3Opacity};"
 		>
 			<div class="text-5xl mb-4">🛹</div>

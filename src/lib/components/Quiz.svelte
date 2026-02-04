@@ -107,7 +107,7 @@
 			<button
 				use:cheeseStretch
 				onclick={startQuiz}
-				class="px-8 py-4 bg-gradient-to-r from-nacho-400 to-nacho-600 text-white font-bold text-xl rounded-full shadow-lg hover:shadow-2xl transition-shadow"
+				class="px-8 py-4 bg-gradient-to-r from-nacho-400 to-nacho-600 text-white font-bold text-xl rounded-full shadow-lg hover:shadow-2xl transition-shadow motion-reduce:transition-none"
 			>
 				Let's Go! 🚀
 			</button>
@@ -123,7 +123,7 @@
 				</div>
 				<div class="h-3 bg-cream-100 rounded-full overflow-hidden">
 					<div
-						class="h-full bg-nacho-500 rounded-full transition-all duration-500 ease-out"
+						class="h-full bg-nacho-500 rounded-full transition-[width] duration-500 ease-out motion-reduce:transition-none"
 						style="width: {((currentQuestion + 1) / questions.length) * 100}%"
 					></div>
 				</div>
@@ -147,7 +147,7 @@
 						<button
 							use:cheeseStretch
 							onclick={() => selectAnswer(answer)}
-							class="bg-white border-2 border-transparent hover:border-nacho-300 hover:bg-nacho-50 rounded-xl p-6 text-left transition-colors shadow-md hover:shadow-lg"
+							class="bg-white border-2 border-transparent hover:border-nacho-300 hover:bg-nacho-50 rounded-xl p-6 text-left transition-[colors,box-shadow] motion-reduce:transition-none shadow-md hover:shadow-lg"
 						>
 							<p class="font-medium text-gray-800 text-lg">{answer.text}</p>
 						</button>
@@ -192,14 +192,14 @@
 				<a
 					href="/products"
 					use:cheeseStretch
-					class="px-8 py-4 bg-gradient-to-r from-nacho-400 to-nacho-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transition-shadow"
+					class="px-8 py-4 bg-gradient-to-r from-nacho-400 to-nacho-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transition-shadow motion-reduce:transition-none"
 				>
 					See Your Cheese 🧀
 				</a>
 				<button
 					use:cheeseStretch
 					onclick={resetQuiz}
-					class="px-8 py-4 bg-white border-2 border-nacho-400 text-nacho-600 font-bold text-lg rounded-full shadow-md hover:shadow-lg transition-shadow"
+					class="px-8 py-4 bg-white border-2 border-nacho-400 text-nacho-600 font-bold text-lg rounded-full shadow-md hover:shadow-lg transition-shadow motion-reduce:transition-none"
 				>
 					Try Again 🔄
 				</button>

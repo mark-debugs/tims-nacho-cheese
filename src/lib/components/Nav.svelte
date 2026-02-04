@@ -50,7 +50,7 @@
 			<div class="flex items-center justify-between h-20">
 				<!-- Brand logo/name -->
 				<a href="/" class="flex items-center gap-3 group">
-					<div class="text-5xl group-hover:scale-110 transition-transform">🧀</div>
+					<div class="text-5xl group-hover:scale-110 transition-transform motion-reduce:transition-none">🧀</div>
 					<div>
 						<h1 class="font-display text-2xl md:text-3xl font-bold text-nacho-600 leading-tight">
 							Tim's Nacho Cheese
@@ -64,7 +64,7 @@
 					{#each links as link}
 						<a
 							href={link.href}
-							class="font-bold text-lg uppercase tracking-wide transition-all duration-200 relative group
+							class="font-bold text-lg uppercase tracking-wide transition-colors duration-200 motion-reduce:transition-none relative group
 								{isActive(link.href, $page.url.pathname)
 								? 'text-nacho-600'
 								: 'text-gray-700 hover:text-nacho-500'}"
@@ -77,7 +77,7 @@
 								></span>
 							{:else}
 								<span
-									class="absolute -bottom-1 left-0 right-0 h-1 bg-nacho-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
+									class="absolute -bottom-1 left-0 right-0 h-1 bg-nacho-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform motion-reduce:transition-none origin-left"
 								></span>
 							{/if}
 						</a>

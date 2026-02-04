@@ -41,7 +41,7 @@
 		<!-- Hamburger button -->
 		<button
 			onclick={toggleDrawer}
-			class="p-2 rounded-lg hover:bg-nacho-100 transition-colors"
+			class="p-2 rounded-lg hover:bg-nacho-100 transition-colors motion-reduce:transition-none"
 			aria-label="Toggle menu"
 			aria-expanded={isOpen}
 		>
@@ -106,7 +106,7 @@
 						<a
 							href={link.href}
 							onclick={closeDrawer}
-							class="block px-6 py-4 rounded-lg font-bold text-xl transition-all
+							class="block px-6 py-4 rounded-lg font-bold text-xl transition-colors motion-reduce:transition-none
 								{isActive(link.href, $page.url.pathname)
 								? 'bg-nacho-500 text-white shadow-lg'
 								: 'bg-white text-gray-700 hover:bg-nacho-100 hover:text-nacho-700'}"

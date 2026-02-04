@@ -110,7 +110,7 @@
 	<div class="space-y-8 mb-16">
 		{#each filteredPosts as post, i (post.slug)}
 			<article
-				class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-l-4 {getBorderColor(
+				class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow motion-reduce:transition-none border-l-4 {getBorderColor(
 					post.category
 				)}"
 				use:inview={{ once: true }}
