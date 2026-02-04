@@ -31,7 +31,7 @@
 
 <div class="max-w-6xl mx-auto">
 	<!-- Hero section with scroll-triggered entrance -->
-	<div bind:this={headerEl} use:inview class="text-center mb-12">
+	<div bind:this={headerEl} use:inview class="text-center mb-12 {isHeaderInView ? '' : 'min-h-[80px]'}">
 		{#if isHeaderInView}
 			<div in:fly={{ y: -20, duration: 400, easing: quintOut }}>
 				<h1 class="font-display text-5xl md:text-6xl font-bold text-gray-800 mb-4">

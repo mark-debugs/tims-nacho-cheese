@@ -23,6 +23,7 @@
 <div
 	bind:this={containerEl}
 	use:inview
+	class={isInView ? '' : 'min-h-[100px]'}
 >
 	{#if isInView}
 		<div

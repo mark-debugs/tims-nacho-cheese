@@ -80,16 +80,19 @@
 <div
 	bind:this={containerEl}
 	use:inview
+	class={isInView ? '' : 'min-h-[200px]'}
 >
 	{#if isInView}
 		<div
-			use:cheeseStretch
 			transition:animation.transition={{
 				...animation.params,
 				delay: reducedMotion ? 0 : index * 100
 			}}
-			class="rounded-2xl p-8 shadow-lg border-2 bg-white {colors.border}"
 		>
+			<div
+				use:cheeseStretch
+				class="rounded-2xl p-8 shadow-lg border-2 bg-white {colors.border} cursor-pointer"
+			>
 			<div class="text-6xl mb-4">{flavor.emoji}</div>
 			<h3 class="font-display text-2xl font-bold mb-2 {colors.text}">{flavor.name}</h3>
 			<span
@@ -108,6 +111,7 @@
 						style="width: {(flavor.heatLevel / 5) * 100}%"
 					></div>
 				</div>
+			</div>
 			</div>
 		</div>
 	{/if}
