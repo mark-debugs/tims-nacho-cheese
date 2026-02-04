@@ -46,11 +46,9 @@
 </div>
 
 <style>
-	@media (prefers-reduced-motion: no-preference) {
-		:global(::view-transition-old(root)),
-		:global(::view-transition-new(root)) {
-			animation-duration: 0.3s;
-			animation-timing-function: ease;
-		}
+	:global(::view-transition-old(root)),
+	:global(::view-transition-new(root)) {
+		animation-duration: 0.3s;
+		animation-timing-function: ease;
 	}
 </style>
