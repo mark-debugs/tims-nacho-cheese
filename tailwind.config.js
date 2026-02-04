@@ -54,7 +54,57 @@ export default {
 					300: '#FFE9D0',
 					400: '#FFE1C0',
 					500: '#FFD9B0'
+				},
+				// Mozzarella blue - for Mozz Pure flavor
+				mozz: {
+					50: '#EFF6FF',
+					100: '#DBEAFE',
+					200: '#BFDBFE',
+					300: '#93C5FD',
+					400: '#60A5FA',
+					500: '#3B82F6',
+					600: '#2563EB',
+					700: '#1D4ED8',
+					800: '#1E40AF'
+				},
+				// White cheese - clean neutral gray for White Cheese Sauce
+				'white-cheese': {
+					50: '#FAFAFA',
+					100: '#F5F5F5',
+					200: '#E5E5E5',
+					300: '#D4D4D4',
+					400: '#A3A3A3',
+					500: '#737373',
+					600: '#525252',
+					700: '#404040',
+					800: '#262626'
 				}
+			},
+			keyframes: {
+				flameFlicker: {
+					'0%, 100%': { transform: 'scale(1) translateY(0)', opacity: '1' },
+					'50%': { transform: 'scale(1.1) translateY(-5px)', opacity: '0.85' }
+				},
+				heatShimmer: {
+					'0%, 100%': { transform: 'translateX(0) skewX(0deg)' },
+					'25%': { transform: 'translateX(2px) skewX(1deg)' },
+					'75%': { transform: 'translateX(-2px) skewX(-1deg)' }
+				},
+				cheeseDrip: {
+					'0%': { transform: 'scaleY(0)', transformOrigin: 'top' },
+					'100%': { transform: 'scaleY(1)', transformOrigin: 'top' }
+				},
+				wobbleIn: {
+					'0%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' },
+					'100%': { transform: 'rotate(0deg)' }
+				}
+			},
+			animation: {
+				'flame-flicker': 'flameFlicker 0.3s ease-in-out infinite',
+				'heat-shimmer': 'heatShimmer 0.2s ease-in-out infinite',
+				'cheese-drip': 'cheeseDrip 0.8s ease-out forwards',
+				'wobble-in': 'wobbleIn 0.5s ease-out'
 			}
 		}
 	},
