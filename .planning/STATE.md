@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-03)
 ## Current Position
 
 Phase: 3 of 4 (Brand & Content)
-Plan: 1 of 3 in current phase
-Status: In progress
-Last activity: 2026-02-04 — Completed 03-01-PLAN.md (Content Pipeline & Brand Animation)
+Plan: 3 of 3 in current phase
+Status: Phase complete
+Last activity: 2026-02-04 — Completed 03-03-PLAN.md (Blog Content & Newsletter)
 
-Progress: [██████░░░░] 60% (6 of 10 plans complete)
+Progress: [████████░░] 80% (8 of 10 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 5.8 min
-- Total execution time: ~0.6 hours
+- Total plans completed: 8
+- Average duration: 6.0 min
+- Total execution time: ~0.8 hours
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [██████░░░░] 60% (6 of 10 plans complete)
 |-------|-------|-------|----------|
 | 1. Foundation & Infrastructure | 2 | 15.1 min | 7.6 min |
 | 2. Product Showcase | 2 | ~18 min | ~9 min |
-| 3. Brand & Content | 1 | 6.2 min | 6.2 min |
+| 3. Brand & Content | 3 | 19.2 min | 6.4 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (6.7 min), 02-01 (3.3 min), 02-02 (~15 min incl. debugging), 03-01 (6.2 min)
-- Phase 3 first plan: MDSveX config + homepage/about animations (6.2 min)
+- Last 5 plans: 02-01 (3.3 min), 02-02 (~15 min), 03-01 (6.2 min), 03-02 (0.5 min placeholder), 03-03 (6.5 min)
+- Phase 3 complete: MDSveX + homepage/about + quiz placeholder + blog system (19.2 min total)
 
 *Updated after each plan completion*
 
@@ -66,6 +66,11 @@ Recent decisions affecting current work:
 - MDSveX inline highlighter — Shiki integration in svelte.config.js, no @bitmachina/highlighter (03-01)
 - Spring hard transitions — Use { hard: true } not { duration: 0 } for instant spring transitions (03-01)
 - Custom event type declarations — Augment svelteHTML.HTMLAttributes for oninview_enter/exit (03-01)
+- import.meta.glob for blog posts — Dynamic markdown loading scales better than manual imports (03-03)
+- Dynamic import for jsPDF — Avoid SSR errors with browser-only libraries (03-03)
+- use:enhance custom callback — Inline form responses without navigation (03-03)
+- font-display Tailwind utility — Added to config to support Baloo 2 font class (03-03)
+- splitTextToSize for PDF text — Prevent overflow in 4x6 recipe card format (03-03)
 
 ### Pending Todos
 
@@ -78,7 +83,7 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-04
-Stopped at: Completed 03-01 (Content Pipeline & Brand Animation)
+Stopped at: Completed 03-03 (Blog Content & Newsletter) — Phase 3 complete!
 Resume file: None
 
 **Phase 1 delivered:**
@@ -97,10 +102,19 @@ Resume file: None
 - Fixed: Transform conflict between cheeseStretch and Svelte transitions
 - Fixed: MEGA SPICE flames blocked by Windows reduced motion setting
 
-**Phase 3 progress:**
+**Phase 3 delivered:**
 - 03-01: Content pipeline & brand animation (6.2 min) ✓
   - MDSveX preprocessor with Shiki syntax highlighting
   - Homepage hero with bouncy spring animations
   - About page with scroll-triggered section animations
   - Hero CTAs link to /products and /quiz
   - TypeScript custom event declarations for inview action
+- 03-02: Quiz funnel placeholder (0.5 min) ✓
+  - Placeholder page for future quiz implementation
+  - Awaits backend integration for personalized recommendations
+- 03-03: Blog content & newsletter (6.5 min) ✓
+  - 4 blog posts (2 recipes: Spicy Nachos, Mozz Pizza Dip; 2 lifestyle: Surf Trip, Skate & Cheese)
+  - Dynamic blog listing with category filtering (All/Recipes/Lifestyle)
+  - Recipe card PDF downloads (4x6 format with jsPDF)
+  - Newsletter signup with inline validation and feedback
+  - Product links from recipes to flavor cards
