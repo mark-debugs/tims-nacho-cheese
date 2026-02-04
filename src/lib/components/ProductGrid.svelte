@@ -35,14 +35,14 @@
 	<div class="flex flex-wrap gap-3 mb-8 justify-center">
 		<button
 			onclick={() => activeCategory = 'all'}
-			class="px-6 py-2 rounded-full font-medium transition-[background-color,color,border-color] motion-reduce:transition-none {activeCategory === 'all' ? 'bg-nacho-500 text-white' : 'bg-white border-2 border-gray-300 text-gray-700 hover:border-nacho-400'}"
+			class="px-6 py-2 rounded-full font-medium transition-[background-color,color,border-color] {activeCategory === 'all' ? 'bg-nacho-500 text-white' : 'bg-white border-2 border-gray-300 text-gray-700 hover:border-nacho-400'}"
 		>
 			All Products
 		</button>
 		{#each categories as category}
 			<button
 				onclick={() => activeCategory = category.id}
-				class="px-6 py-2 rounded-full font-medium transition-[background-color,color,border-color] motion-reduce:transition-none {activeCategory === category.id ? 'bg-nacho-500 text-white' : 'bg-white border-2 border-gray-300 text-gray-700 hover:border-nacho-400'}"
+				class="px-6 py-2 rounded-full font-medium transition-[background-color,color,border-color] {activeCategory === category.id ? 'bg-nacho-500 text-white' : 'bg-white border-2 border-gray-300 text-gray-700 hover:border-nacho-400'}"
 			>
 				{category.emoji} {category.label}
 			</button>

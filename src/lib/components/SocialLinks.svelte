@@ -39,7 +39,7 @@
 			href={link.url}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="text-gray-600 hover:text-nacho-600 transition-colors motion-reduce:transition-none"
+			class="text-gray-600 hover:text-nacho-600 transition-colors"
 			aria-label={link.name}
 		>
 			<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

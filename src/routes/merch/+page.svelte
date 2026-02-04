@@ -67,7 +67,7 @@
 					/>
 					<button
 						type="submit"
-						class="px-8 py-3 bg-white text-nacho-600 font-bold rounded-full hover:bg-gray-100 transition-colors motion-reduce:transition-none"
+						class="px-8 py-3 bg-white text-nacho-600 font-bold rounded-full hover:bg-gray-100 transition-colors"
 					>
 						Notify Me
 					</button>

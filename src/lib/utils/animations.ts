@@ -98,9 +98,9 @@ export const SPRING_CONFIGS = {
 // ===== ACCESSIBILITY UTILITIES =====
 
 /**
- * Check if user prefers reduced motion
+ * Check if user prefers reduced motion.
+ * Always returns false — site animations play regardless of OS settings.
  */
 export function prefersReducedMotion(): boolean {
-	if (typeof window === 'undefined') return false;
-	return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	return false;
 }

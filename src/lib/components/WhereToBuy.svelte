@@ -71,7 +71,7 @@
 			<div class="text-center">
 				<a
 					href="/about"
-					class="inline-block px-8 py-3 bg-nacho-500 text-white font-bold rounded-full hover:bg-nacho-600 transition-colors motion-reduce:transition-none"
+					class="inline-block px-8 py-3 bg-nacho-500 text-white font-bold rounded-full hover:bg-nacho-600 transition-colors"
 				>
 					Learn About Tim
 				</a>
