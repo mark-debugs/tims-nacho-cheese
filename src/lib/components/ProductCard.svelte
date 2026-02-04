@@ -1,0 +1,33 @@
+<script lang="ts">
+	import { cheeseStretch } from '$lib/actions/cheese-stretch';
+	import type { Product } from '$lib/data/products';
+
+	type Props = {
+		product: Product;
+	};
+
+	let { product }: Props = $props();
+</script>
+
+<div
+	use:cheeseStretch
+	class="bg-white rounded-2xl overflow-hidden shadow-lg motion-safe:hover:scale-[1.02] motion-safe:hover:-translate-y-1 motion-safe:transition-all motion-reduce:transition-none cursor-pointer"
+>
+	<div class="bg-gradient-to-br {product.gradient} h-64 flex items-center justify-center">
+		<div class="text-9xl">{product.emoji}</div>
+	</div>
+	<div class="p-6">
+		<div class="flex items-center justify-between mb-2">
+			<h3 class="font-display text-2xl font-bold text-gray-800">{product.name}</h3>
+			{#if product.comingSoon}
+				<span class="px-3 py-1 bg-nacho-500 text-white text-sm font-bold rounded-full">
+					Coming Soon
+				</span>
+			{/if}
+		</div>
+		<p class="text-gray-600 mb-4">
+			{product.description}
+		</p>
+		<p class="text-2xl font-display font-bold text-nacho-600">${product.price}</p>
+	</div>
+</div>
