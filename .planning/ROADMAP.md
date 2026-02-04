@@ -81,10 +81,11 @@ Plans:
   3. Site passes Lighthouse performance audit with 90+ scores
   4. Reduced motion preference is respected for accessibility
   5. All animations perform smoothly on mobile devices
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD
+- [ ] 04-01-PLAN.md — Merch showcase with product data, category filtering, and accessible social links in footer
+- [ ] 04-02-PLAN.md — Animation accessibility audit, performance optimization, and Lighthouse 90+ verification
 
 ## Progress
 
@@ -96,4 +97,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Foundation & Infrastructure | 2/2 | Complete | 2026-02-04 |
 | 2. Product Showcase | 2/2 | Complete | 2026-02-04 |
 | 3. Brand & Content | 3/3 | Complete | 2026-02-04 |
-| 4. Merch & Polish | 0/0 | Not started | - |
+| 4. Merch & Polish | 0/2 | In progress | - |
