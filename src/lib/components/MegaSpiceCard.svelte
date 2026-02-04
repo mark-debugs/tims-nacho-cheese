@@ -66,7 +66,7 @@
 				class="relative rounded-2xl p-8 shadow-lg border-2 border-spice-700 bg-gradient-to-br from-spice-400 to-spice-600 text-white md:col-span-2 lg:col-span-1 cursor-pointer"
 			>
 				<!-- Flame decorations (only visible on hover) -->
-				{#if isHovered && !reducedMotion}
+				{#if isHovered}
 					<div class="absolute -top-8 left-1/4 text-4xl animate-flame-flicker z-20">
 						🔥
 					</div>
@@ -79,7 +79,7 @@
 				{/if}
 
 				<!-- Heat shimmer overlay (only on hover) -->
-				{#if isHovered && !reducedMotion}
+				{#if isHovered}
 					<div
 						class="absolute inset-0 rounded-2xl bg-gradient-to-t from-spice-600/50 to-transparent pointer-events-none animate-heat-shimmer"
 					></div>
