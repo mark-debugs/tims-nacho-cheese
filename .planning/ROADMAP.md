@@ -64,10 +64,12 @@ Plans:
   5. Users can read lifestyle blog posts about Tim's adventures
   6. Users can download printable recipe cards
   7. Newsletter signup captures emails with validation
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] TBD
+- [ ] 03-01-PLAN.md — Install deps (MDSveX, jsPDF, Shiki), animate homepage hero and about page with spring physics
+- [ ] 03-02-PLAN.md — Interactive flavor finder quiz with personality questions and cheese matching
+- [ ] 03-03-PLAN.md — Blog content system (MDSveX), recipe card PDF downloads, and newsletter signup
 
 ### Phase 4: Merch & Polish
 **Goal**: Merch line showcased, social channels connected, and site production-ready with performance optimization
@@ -93,5 +95,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 2/2 | Complete | 2026-02-04 |
 | 2. Product Showcase | 2/2 | Complete | 2026-02-04 |
-| 3. Brand & Content | 0/0 | Not started | - |
+| 3. Brand & Content | 0/3 | In Progress | - |
 | 4. Merch & Polish | 0/0 | Not started | - |
