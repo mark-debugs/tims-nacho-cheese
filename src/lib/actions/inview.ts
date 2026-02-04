@@ -4,6 +4,16 @@ export type InviewOptions = {
 	once?: boolean;
 };
 
+// Augment HTMLAttributes to include our custom event handlers
+declare global {
+	namespace svelteHTML {
+		interface HTMLAttributes<T> {
+			'oninview_enter'?: (event: CustomEvent) => void;
+			'oninview_exit'?: (event: CustomEvent) => void;
+		}
+	}
+}
+
 export function inview(node: HTMLElement, options: InviewOptions = {}) {
 	const { rootMargin = '50px', threshold = 0.1, once = true } = options;
 
