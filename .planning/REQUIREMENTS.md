@@ -8,9 +8,9 @@
 ### Homepage & Navigation
 
 - [ ] **HOME-01**: Homepage displays animated hero section showcasing brand personality with bouncy orange-themed animations
-- [ ] **HOME-02**: Site has clear top navigation linking to Products, Blog, Merch, and About sections
-- [ ] **HOME-03**: All pages are mobile-responsive and work on phone, tablet, and desktop
-- [ ] **HOME-04**: Pages load in under 3 seconds with optimized images and lazy loading
+- [x] **HOME-02**: Site has clear top navigation linking to Products, Blog, Merch, and About sections
+- [x] **HOME-03**: All pages are mobile-responsive and work on phone, tablet, and desktop
+- [x] **HOME-04**: Pages load in under 3 seconds with optimized images and lazy loading
 
 ### Brand & Story
 
@@ -47,8 +47,8 @@
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: Site runs containerized in Docker
-- [ ] **INFRA-02**: Built with SvelteKit and Bun runtime
+- [x] **INFRA-01**: Site runs containerized in Docker
+- [x] **INFRA-02**: Built with SvelteKit and Bun runtime
 
 ## v2 Requirements
 
@@ -87,9 +87,9 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | HOME-01 | Phase 3 | Pending |
-| HOME-02 | Phase 1 | Pending |
-| HOME-03 | Phase 1 | Pending |
-| HOME-04 | Phase 1 | Pending |
+| HOME-02 | Phase 1 | Complete |
+| HOME-03 | Phase 1 | Complete |
+| HOME-04 | Phase 1 | Complete |
 | BRAND-01 | Phase 3 | Pending |
 | BRAND-02 | Phase 3 | Pending |
 | PROD-01 | Phase 2 | Pending |
@@ -105,8 +105,8 @@
 | BLOG-04 | Phase 3 | Pending |
 | MERCH-01 | Phase 4 | Pending |
 | SOCL-01 | Phase 4 | Pending |
-| INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 1 | Pending |
+| INFRA-01 | Phase 1 | Complete |
+| INFRA-02 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 21 total
