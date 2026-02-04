@@ -1,0 +1,26 @@
+{
+  "name": "testgsd",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/enhanced-img": "^0.10.0",
+    "@sveltejs/kit": "^2.50.2",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "svelte": "^5.49.1",
+    "svelte-adapter-bun": "^1.0.1",
+    "tailwindcss": "3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
