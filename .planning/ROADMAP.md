@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold SvelteKit project with Bun, Tailwind v3, and Docker containerization
+- [x] 01-01-PLAN.md — Scaffold SvelteKit project with Bun, Tailwind v3, and Docker containerization (completed 2026-02-04)
 - [ ] 01-02-PLAN.md — Navigation system, route pages, responsive layout, and animation utilities
 
 ### Phase 2: Product Showcase
@@ -90,7 +90,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Infrastructure | 0/2 | Planned | - |
+| 1. Foundation & Infrastructure | 1/2 | In progress | - |
 | 2. Product Showcase | 0/0 | Not started | - |
 | 3. Brand & Content | 0/0 | Not started | - |
 | 4. Merch & Polish | 0/0 | Not started | - |
