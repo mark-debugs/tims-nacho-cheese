@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-02-03)
 
 ## Current Position
 
-Phase: 4 of 4 (Merch & Polish) — COMPLETE
-Plan: 2 of 2 in current phase — ALL COMPLETE
-Status: Milestone complete
-Last activity: 2026-02-04 — Completed Phase 4 (Merch & Polish) — verified ✓
+Phase: 5 of 5 (Custom Imagery with Fruitsnake) — IN PROGRESS
+Plan: 2 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-08 — Completed 05-02-PLAN.md (Merch Product Images)
 
-Progress: [██████████] 100% (10 of 10 plans complete)
+Progress: [████████████] 100% (12 of 12 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 6.0 min
-- Total execution time: ~1.0 hours
+- Total plans completed: 12
+- Average duration: ~6.3 min
+- Total execution time: ~1.3 hours
 
 **By Phase:**
 
@@ -31,10 +31,11 @@ Progress: [██████████] 100% (10 of 10 plans complete)
 | 2. Product Showcase | 2 | ~18 min | ~9 min |
 | 3. Brand & Content | 3 | 19.2 min | 6.4 min |
 | 4. Merch & Polish | 2 | ~17 min | ~8.5 min |
+| 5. Custom Imagery | 2 | 20 min | 10 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-01 (6.2 min), 03-02 (4.6 min), 03-03 (6.5 min), 04-01 (4.8 min), 04-02 (~12 min)
-- All phases complete
+- Last 5 plans: 03-03 (6.5 min), 04-01 (4.8 min), 04-02 (~12 min), 05-01 (10 min), 05-02 (10 min)
+- Phase 5 complete
 
 *Updated after each plan completion*
 
@@ -76,6 +77,8 @@ Recent decisions affecting current work:
 - Category filter pattern — Match blog filter for consistency across site (04-01)
 - Animations always play — Ignore OS reduced motion setting site-wide per user decision (04-02)
 - No transition-all — Use specific GPU-friendly property transitions only (04-02)
+- object-contain for product images — Preserve gradient backgrounds as brand identity element (05-02)
+- Optional image field on Product type — Graceful emoji fallback when image missing (05-02)
 
 ### Pending Todos
 
@@ -87,8 +90,8 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-02-04
-Stopped at: Milestone complete — all 4 phases delivered and verified
+Last session: 2026-02-08
+Stopped at: Completed 05-02-PLAN.md (Merch Product Images)
 Resume file: None
 
 **Phase 1 delivered:**
@@ -139,4 +142,17 @@ Resume file: None
   - Production build verified, Lighthouse-ready
   - View transition reduced-motion wrapper removed
 
-**Milestone v1 complete.** Ready for audit.
+**Phase 5 delivered:**
+- 05-01: Flavor product images (10 min) ✓
+  - Generated 5 custom flavor product images with fruitsnake-mcp
+  - Added image field to Flavor type
+  - Integrated images into FlavorCard with enhanced:img
+  - Style fingerprint maintained for visual consistency
+- 05-02: Merch product images (10 min) ✓
+  - Generated 8 custom merch product mockup images with fruitsnake-mcp
+  - Added image field to Product type and imported all merch images
+  - Integrated images into ProductCard using enhanced:img
+  - object-contain sizing preserves gradient backgrounds as brand element
+  - Graceful emoji fallback for missing images
+
+**All phases complete.** Ready for next milestone.
