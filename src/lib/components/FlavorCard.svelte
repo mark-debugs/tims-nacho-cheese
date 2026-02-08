@@ -91,27 +91,40 @@
 		>
 			<div
 				use:cheeseStretch
-				class="rounded-2xl p-8 shadow-lg border-2 bg-white {colors.border} cursor-pointer"
+				class="rounded-2xl overflow-hidden shadow-lg border-2 bg-white {colors.border} cursor-pointer"
 			>
-			<div class="text-6xl mb-4">{flavor.emoji}</div>
-			<h3 class="font-display text-2xl font-bold mb-2 {colors.text}">{flavor.name}</h3>
-			<span
-				class="inline-block px-3 py-1 text-sm font-medium rounded-full mb-4 {colors.badgeBg} {colors.badgeText}"
-			>
-				{flavor.badge}
-			</span>
-			<p class="text-gray-700 leading-relaxed mb-4">
-				{flavor.description}
-			</p>
-			<div class="flex items-center gap-2 text-sm text-gray-600">
-				<span>🌶️ Heat Level:</span>
-				<div class="flex-1 bg-gray-200 h-2 rounded-full overflow-hidden">
-					<div
-						class="h-full {colors.heatBar}"
-						style="width: {(flavor.heatLevel / 5) * 100}%"
-					></div>
+				{#if flavor.image}
+					<enhanced:img
+						src={flavor.image}
+						alt="{flavor.name} nacho cheese sauce"
+						sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+						class="w-full h-48 object-cover"
+					/>
+				{:else}
+					<div class="w-full h-48 flex items-center justify-center {colors.badgeBg}">
+						<div class="text-6xl">{flavor.emoji}</div>
+					</div>
+				{/if}
+				<div class="p-8">
+					<h3 class="font-display text-2xl font-bold mb-2 {colors.text}">{flavor.name}</h3>
+					<span
+						class="inline-block px-3 py-1 text-sm font-medium rounded-full mb-4 {colors.badgeBg} {colors.badgeText}"
+					>
+						{flavor.badge}
+					</span>
+					<p class="text-gray-700 leading-relaxed mb-4">
+						{flavor.description}
+					</p>
+					<div class="flex items-center gap-2 text-sm text-gray-600">
+						<span>🌶️ Heat Level:</span>
+						<div class="flex-1 bg-gray-200 h-2 rounded-full overflow-hidden">
+							<div
+								class="h-full {colors.heatBar}"
+								style="width: {(flavor.heatLevel / 5) * 100}%"
+							></div>
+						</div>
+					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 	{/if}

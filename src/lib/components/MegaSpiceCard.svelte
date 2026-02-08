@@ -63,7 +63,7 @@
 				use:cheeseStretch
 				onmouseenter={handleMouseEnter}
 				onmouseleave={handleMouseLeave}
-				class="relative rounded-2xl p-8 shadow-lg border-2 border-spice-700 bg-gradient-to-br from-spice-400 to-spice-600 text-white md:col-span-2 lg:col-span-1 cursor-pointer"
+				class="relative rounded-2xl overflow-hidden shadow-lg border-2 border-spice-700 bg-gradient-to-br from-spice-400 to-spice-600 text-white md:col-span-2 lg:col-span-1 cursor-pointer"
 			>
 				<!-- Flame decorations (only visible on hover) -->
 				{#if isHovered}
@@ -85,9 +85,21 @@
 					></div>
 				{/if}
 
+				{#if flavor.image}
+					<enhanced:img
+						src={flavor.image}
+						alt="MEGA SPICE Face Melter nacho cheese sauce with extreme heat"
+						sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+						class="w-full h-48 object-cover"
+					/>
+				{:else}
+					<div class="w-full h-48 flex items-center justify-center">
+						<div class="text-6xl">{flavor.emoji}</div>
+					</div>
+				{/if}
+
 				<!-- Card content -->
-				<div class="relative z-10">
-					<div class="text-6xl mb-4">{flavor.emoji}</div>
+				<div class="relative z-10 p-8">
 					<h3 class="font-display text-3xl font-bold text-white mb-2">MEGA SPICE</h3>
 					<span class="inline-block text-lg mb-1 text-white/80">Face Melter</span>
 					<div class="mb-4">

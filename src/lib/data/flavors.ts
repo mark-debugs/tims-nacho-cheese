@@ -1,3 +1,9 @@
+import whiteCheeseImg from '$lib/assets/images/flavors/white-cheese.png';
+import orangeSpiceImg from '$lib/assets/images/flavors/orange-spice.png';
+import mozzPureImg from '$lib/assets/images/flavors/mozz-pure.png';
+import cheddarBeddarImg from '$lib/assets/images/flavors/cheddar-beddar.png';
+import megaSpiceImg from '$lib/assets/images/flavors/mega-spice.png';
+
 export type Flavor = {
 	id: string;
 	name: string;
@@ -8,6 +14,7 @@ export type Flavor = {
 	emoji: string;
 	badge: string;
 	isStar: boolean;
+	image?: string;
 };
 
 export const flavors: Flavor[] = [
@@ -21,7 +28,8 @@ export const flavors: Flavor[] = [
 		color: 'white-cheese',
 		emoji: '🤍',
 		badge: 'Classic Mild',
-		isStar: false
+		isStar: false,
+		image: whiteCheeseImg
 	},
 	{
 		id: 'orange-spice',
@@ -33,7 +41,8 @@ export const flavors: Flavor[] = [
 		color: 'nacho',
 		emoji: '🧡',
 		badge: 'Signature Blend',
-		isStar: false
+		isStar: false,
+		image: orangeSpiceImg
 	},
 	{
 		id: 'mozz-pure',
@@ -45,7 +54,8 @@ export const flavors: Flavor[] = [
 		color: 'mozz',
 		emoji: '💙',
 		badge: 'Smooth Operator',
-		isStar: false
+		isStar: false,
+		image: mozzPureImg
 	},
 	{
 		id: 'cheddar-beddar',
@@ -57,7 +67,8 @@ export const flavors: Flavor[] = [
 		color: 'cheddar',
 		emoji: '🧀',
 		badge: 'Bold & Sharp',
-		isStar: false
+		isStar: false,
+		image: cheddarBeddarImg
 	},
 	{
 		id: 'mega-spice',
@@ -69,6 +80,7 @@ export const flavors: Flavor[] = [
 		color: 'spice',
 		emoji: '🔥',
 		badge: 'Maximum Heat',
-		isStar: true
+		isStar: true,
+		image: megaSpiceImg
 	}
 ];
