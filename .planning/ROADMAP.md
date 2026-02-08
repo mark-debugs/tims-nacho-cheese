@@ -16,6 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Product Showcase** - 5 cheese flavors with playful animations and distinct personalities
 - [x] **Phase 3: Brand & Content** - Homepage hero, Tim's story, and blog with recipes
 - [x] **Phase 4: Merch & Polish** - Lifestyle products, social links, and production optimization
+- [ ] **Phase 5: Custom Imagery with Fruitsnake** - Replace stock iconography and add high-quality product images using fruitsnake-mcp
 
 ## Phase Details
 
@@ -87,10 +88,27 @@ Plans:
 - [x] 04-01-PLAN.md — Merch showcase with product data, category filtering, and accessible social links in footer (completed 2026-02-04)
 - [x] 04-02-PLAN.md — Animation accessibility audit, performance optimization, and Lighthouse 90+ verification (completed 2026-02-04)
 
+### Phase 5: Custom Imagery with Fruitsnake
+**Goal**: Replace stock iconography and add high-quality custom product images using fruitsnake-mcp for a unique, branded visual identity
+**Depends on**: Phase 4
+**Requirements**: IMG-01 (flavor images), IMG-02 (merch images), IMG-03 (homepage imagery), IMG-04 (performance)
+**Success Criteria** (what must be TRUE):
+  1. Stock iconography replaced with custom-generated images that match the brand aesthetic
+  2. Product images are high quality and visually consistent across all flavor cards
+  3. Custom imagery integrates seamlessly with existing animations and layout
+  4. Images are optimized for web performance (proper formats, sizing, compression)
+  5. Site maintains Lighthouse 90+ scores after image additions
+**Plans**: 3 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Generate 5 flavor product images with fruitsnake-mcp and integrate into flavor cards
+- [ ] 05-02-PLAN.md — Generate 8 merch product images with fruitsnake-mcp and integrate into product cards
+- [ ] 05-03-PLAN.md — Homepage imagery updates and full site visual/performance verification
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -98,3 +116,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 2. Product Showcase | 2/2 | Complete | 2026-02-04 |
 | 3. Brand & Content | 3/3 | Complete | 2026-02-04 |
 | 4. Merch & Polish | 2/2 | Complete | 2026-02-04 |
+| 5. Custom Imagery with Fruitsnake | 0/3 | Not Started | — |
