@@ -2,6 +2,7 @@
 	import { bouncySpring, prefersReducedMotion } from '$lib/utils/animations';
 	import { inview } from '$lib/actions/inview';
 	import { cheeseStretch } from '$lib/actions/cheese-stretch';
+	import megaSpiceHero from '$lib/assets/images/flavors/mega-spice.png';
 
 	// Hero entrance animations
 	let heroScale = bouncySpring(0);
@@ -128,11 +129,12 @@
 	class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-nacho-400 via-nacho-500 to-spice-500 p-8 md:p-16 mb-12 shadow-2xl"
 >
 	<div class="relative z-10 text-center text-white">
-		<div
-			class="text-8xl mb-6"
-			style="transform: scale({$heroScale}) rotate({$heroRotation}deg); display: inline-block;"
-		>
-			🧀
+		<div class="mb-6 inline-block" style="transform: scale({$heroScale}) rotate({$heroRotation}deg);">
+			<enhanced:img
+				src={megaSpiceHero}
+				alt="Tim's Nacho Cheese featured product"
+				class="w-32 h-32 md:w-40 md:h-40 object-contain rounded-2xl drop-shadow-2xl"
+			/>
 		</div>
 		<h1
 			class="font-display text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg"
@@ -165,9 +167,6 @@
 			</a>
 		</div>
 	</div>
-	<!-- Decorative background elements -->
-	<div class="absolute top-10 left-10 text-6xl opacity-20 animate-bounce">🧀</div>
-	<div class="absolute bottom-10 right-10 text-6xl opacity-20 animate-bounce delay-100">🧀</div>
 </div>
 
 <!-- Feature Cards -->
@@ -234,7 +233,13 @@
 	</h2>
 	<div class="bg-gradient-to-r from-spice-400 to-spice-600 rounded-3xl p-8 md:p-12 text-white">
 		<div class="flex flex-col md:flex-row items-center gap-8">
-			<div class="text-9xl">🌶️</div>
+			<div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
+				<enhanced:img
+					src={megaSpiceHero}
+					alt="MEGA SPICE Face Melter nacho cheese sauce"
+					class="w-full h-full object-contain drop-shadow-lg"
+				/>
+			</div>
 			<div class="flex-1 text-center md:text-left">
 				<h3 class="font-display text-5xl font-bold mb-4 drop-shadow-lg">MEGA SPICE</h3>
 				<p class="text-xl mb-6 drop-shadow">
