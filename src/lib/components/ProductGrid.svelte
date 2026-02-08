@@ -16,18 +16,7 @@
 
 	const reducedMotion = prefersReducedMotion();
 
-	let cardElements = $state<Map<string, { isInView: boolean; index: number }>>(new Map());
-
-	function initializeCard(productId: string, index: number) {
-		cardElements.set(productId, { isInView: false, index });
-	}
-
-	function handleCardInview(productId: string) {
-		const existing = cardElements.get(productId);
-		if (existing) {
-			cardElements.set(productId, { ...existing, isInView: true });
-		}
-	}
+	let inView: Record<string, boolean> = $state({});
 </script>
 
 <div>
@@ -52,20 +41,18 @@
 	<!-- Product Grid -->
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 		{#each filteredProducts as product, index (product.id)}
-			{@const cardState = cardElements.get(product.id)}
-			{@const _ = !cardState && initializeCard(product.id, index)}
 			<div
 				use:inview
-				oninview_enter={() => handleCardInview(product.id)}
-				class={cardState?.isInView ? '' : 'min-h-[200px]'}
+				oninview_enter={() => inView[product.id] = true}
+				class={inView[product.id] ? '' : 'min-h-[200px]'}
 			>
-				{#if cardState?.isInView}
+				{#if inView[product.id]}
 					<div
 						transition:scale={{
 							start: 0.8,
 							duration: 400,
 							easing: elasticOut,
-							delay: reducedMotion ? 0 : cardState.index * 100
+							delay: reducedMotion ? 0 : index * 100
 						}}
 					>
 						<ProductCard {product} />

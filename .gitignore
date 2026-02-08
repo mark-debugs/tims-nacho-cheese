@@ -40,5 +40,3 @@ vite.config.ts.timestamp-*
 
 # Temporary files
 nul
-index.ts
-README.md
