@@ -1,3 +1,12 @@
+import classicTeeImg from '$lib/assets/images/merch/classic-tee.png';
+import pulloverHoodieImg from '$lib/assets/images/merch/pullover-hoodie.png';
+import skateDeckImg from '$lib/assets/images/merch/skate-deck.png';
+import stickerPackImg from '$lib/assets/images/merch/sticker-pack.png';
+import dadHatImg from '$lib/assets/images/merch/dad-hat.png';
+import toteBagImg from '$lib/assets/images/merch/tote-bag.png';
+import enamelPinSetImg from '$lib/assets/images/merch/enamel-pin-set.png';
+import cheeseKoozieImg from '$lib/assets/images/merch/cheese-koozie.png';
+
 export type ProductCategory = 'apparel' | 'skate-decks' | 'stickers' | 'pins' | 'accessories';
 
 export type Product = {
@@ -9,6 +18,7 @@ export type Product = {
 	emoji: string;
 	gradient: string; // Tailwind gradient classes (from-X to-Y)
 	comingSoon: boolean;
+	image?: string;
 };
 
 export const categories: { id: ProductCategory; label: string; emoji: string }[] = [
@@ -28,7 +38,8 @@ export const products: Product[] = [
 		price: 28,
 		emoji: '👕',
 		gradient: 'from-nacho-300 to-nacho-500',
-		comingSoon: true
+		comingSoon: true,
+		image: classicTeeImg
 	},
 	{
 		id: 'pullover-hoodie',
@@ -38,7 +49,8 @@ export const products: Product[] = [
 		price: 58,
 		emoji: '🧥',
 		gradient: 'from-cheddar-300 to-cheddar-500',
-		comingSoon: true
+		comingSoon: true,
+		image: pulloverHoodieImg
 	},
 	{
 		id: 'skate-deck',
@@ -48,7 +60,8 @@ export const products: Product[] = [
 		price: 65,
 		emoji: '🛹',
 		gradient: 'from-spice-300 to-spice-600',
-		comingSoon: true
+		comingSoon: true,
+		image: skateDeckImg
 	},
 	{
 		id: 'sticker-pack',
@@ -58,7 +71,8 @@ export const products: Product[] = [
 		price: 12,
 		emoji: '✨',
 		gradient: 'from-blue-300 to-blue-500',
-		comingSoon: true
+		comingSoon: true,
+		image: stickerPackImg
 	},
 	{
 		id: 'dad-hat',
@@ -68,7 +82,8 @@ export const products: Product[] = [
 		price: 32,
 		emoji: '🧢',
 		gradient: 'from-gray-300 to-gray-500',
-		comingSoon: true
+		comingSoon: true,
+		image: dadHatImg
 	},
 	{
 		id: 'tote-bag',
@@ -78,7 +93,8 @@ export const products: Product[] = [
 		price: 24,
 		emoji: '👜',
 		gradient: 'from-cream-100 to-nacho-300',
-		comingSoon: true
+		comingSoon: true,
+		image: toteBagImg
 	},
 	{
 		id: 'enamel-pin-set',
@@ -88,7 +104,8 @@ export const products: Product[] = [
 		price: 18,
 		emoji: '📌',
 		gradient: 'from-nacho-200 to-cheddar-400',
-		comingSoon: true
+		comingSoon: true,
+		image: enamelPinSetImg
 	},
 	{
 		id: 'cheese-koozie',
@@ -98,6 +115,7 @@ export const products: Product[] = [
 		price: 8,
 		emoji: '🥤',
 		gradient: 'from-mozz-200 to-mozz-400',
-		comingSoon: true
+		comingSoon: true,
+		image: cheeseKoozieImg
 	}
 ];

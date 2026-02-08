@@ -14,7 +14,16 @@
 	class="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] hover:-translate-y-1 transition-[transform,box-shadow] cursor-pointer"
 >
 	<div class="bg-gradient-to-br {product.gradient} h-64 flex items-center justify-center">
-		<div class="text-9xl">{product.emoji}</div>
+		{#if product.image}
+			<enhanced:img
+				src={product.image}
+				alt="{product.name} - Tim's Nacho Cheese merchandise"
+				sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+				class="w-full h-full object-contain p-4"
+			/>
+		{:else}
+			<div class="text-9xl">{product.emoji}</div>
+		{/if}
 	</div>
 	<div class="p-6">
 		<div class="flex items-center justify-between mb-2">
